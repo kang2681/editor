@@ -1,0 +1,183 @@
+[
+    // 显示终端
+	{ "keys": ["f1"], "command": "build" },
+    // go 跳转到函数调转 变量定义跳转
+    { "keys": ["f2"], "command": "godef" },
+    // 切换 侧边栏
+    { "keys": ["f3"], "command": "toggle_side_bar" },
+    // 切换书签
+    { "keys": ["f5"], "command": "toggle_bookmark" },
+    // 下一个书签
+    { "keys": ["f6"], "command": "next_bookmark" },
+    // 上一个书签
+    { "keys": ["f7"], "command": "prev_bookmark" },
+    // 清空书签
+    { "keys": ["f8"], "command": "clear_bookmarks" },
+    // 切换 全屏显示
+    { "keys": ["f11"], "command": "toggle_full_screen" },
+    // 文件操作start
+
+
+    // 新建窗口
+    { "keys": ["ctrl+shift+n"], "command": "new_window" },
+    // 关闭窗口
+    { "keys": ["ctrl+shift+w"], "command": "close_window" },
+    // 打开文件
+    { "keys": ["ctrl+o"], "command": "prompt_open" },
+    // 打开最近关闭的文件
+    { "keys": ["ctrl+shift+t"], "command": "reopen_last_file" },
+    // 没什么用暂时注释掉
+    // { "keys": ["ctrl+alt+up"], "command": "switch_file", "args": {"extensions": ["cpp", "cxx", "cc", "c", "hpp", "hxx", "hh", "h", "ipp", "inl", "m", "mm"]} },
+    // 新建文件
+    { "keys": ["ctrl+n"], "command": "new_file" },
+    // 保存
+    { "keys": ["ctrl+s"], "command": "save" },
+    // 另存为(会弹出提示窗口)
+    { "keys": ["ctrl+shift+s"], "command": "prompt_save_as" },
+    // 保存全部
+    { "keys": ["ctrl+alt+s"], "command": "save_all" },
+    // 关闭打开的文件
+    { "keys": ["ctrl+w"], "command": "close" },
+    // 切换 侧边栏
+    { "keys": ["ctrl+b"], "command": "toggle_side_bar" },
+
+
+
+    // 打开文件(会弹出提示窗口)
+    { "keys": ["ctrl+o"], "command": "prompt_open" },
+    // 打开最后关闭的文件
+    { "keys": ["ctrl+shift+t"], "command": "reopen_last_file" },
+    // 侧边栏跳转显示当前文件的位置
+    { "keys": ["alt+s"],"command": "reveal_in_side_bar"},
+    // 快捷打开文件
+    { "keys": ["ctrl+t"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
+    // 文件操作end
+ 
+    // 撤销
+    { "keys": ["ctrl+z"], "command": "undo" },
+    // 重做
+    { "keys": ["ctrl+y"], "command": "redo" },
+    // 重复 暂时没用
+    // { "keys": ["ctrl+y"], "command": "redo_or_repeat" },
+    // 软撤销
+    { "keys": ["ctrl+shift+u"], "command": "soft_undo" },
+    // 软重做
+    { "keys": ["ctrl+shift+u"], "command": "soft_redo" },
+
+
+    // 剪切
+    { "keys": ["ctrl+x"], "command": "cut" },
+    // 复制
+    { "keys": ["ctrl+c"], "command": "copy" },
+    // 粘贴
+    { "keys": ["ctrl+v"], "command": "paste" },
+    // 粘贴并缩进
+    { "keys": ["ctrl+shift+v"], "command": "paste_and_indent" },
+    // 从历史拷贝中粘贴
+    { "keys": ["ctrl+alt", "ctrl+v"], "command": "paste_from_history" },
+
+
+    // 向左单个移动会忽略标点等符号
+    { "keys": ["alt+left"], "command": "move", "args": {"by": "subwords", "forward": false} },
+    // 向右单个移动会忽略标点等符号
+    { "keys": ["alt+right"], "command": "move", "args": {"by": "subword_ends", "forward": true} },
+    // 向左选中单个单词
+    { "keys": ["ctrl+alt+left"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
+    // 向右选中单个单词
+    { "keys": ["ctrl+alt+right"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
+    // 屏幕滚动 x 行的距离
+    { "keys": ["ctrl+alt+up"], "command": "scroll_lines", "args": {"amount": 40.0} },
+    //  屏幕滚动 x 行的距离
+    { "keys": ["ctrl+alt+down"], "command": "scroll_lines", "args": {"amount": -40.0} },
+
+    // 向上选中行
+    { "keys": ["ctrl+shift+up"], "command": "select_lines", "args": {"forward": false} },
+    // 向上选中行
+    { "keys": ["ctrl+shift+down"], "command": "select_lines", "args": {"forward": true} },
+
+    // 暂时不启用
+    // { "keys": ["ctrl+shift+["], "command": "prev_view" },
+    // { "keys": ["ctrl+shift+]"], "command": "next_view" },
+    // { "keys": ["ctrl+alt+left"], "command": "prev_view" },
+    // { "keys": ["ctrl+alt+right"], "command": "next_view" },
+    // { "keys": ["ctrl+pagedown"], "command": "next_view" },
+    // { "keys": ["ctrl+pageup"], "command": "prev_view" },
+
+    // 到堆栈中的下一个视图
+    { "keys": ["ctrl+tab"], "command": "next_view_in_stack" },
+    // 到堆栈中的上一个视图
+    { "keys": ["ctrl+shift+tab"], "command": "prev_view_in_stack" },
+
+    // 全选
+    { "keys": ["ctrl+a"], "command": "select_all" },
+    // 将选中部分按行分割光标(有多行就有多少个光标)
+    { "keys": ["ctrl+shift+l"], "command": "split_selection_into_lines" },
+    // // 缩进
+    // { "keys": ["ctrl+]"], "command": "indent" },
+    // // 反向缩进
+    // { "keys": ["shift+["], "command": "unindent" },
+
+
+    //  测试没用
+    // { "keys": ["ctrl+l"], "command": "expand_selection", "args": {"to": "line"} },
+    // 向下选中同个关键字
+    { "keys": ["ctrl+d"], "command": "find_under_expand" },
+    // 跳过 ctrl+d的选择
+    { "keys": ["ctrl+k", "ctrl+d"], "command": "find_under_expand_skip" },
+    // 选中范围内的内容
+    { "keys": ["ctrl+shift+space"], "command": "expand_selection", "args": {"to": "scope"} },
+    // 选中括号中的内容
+    { "keys": ["ctrl+shift+m"], "command": "expand_selection", "args": {"to": "brackets"} },  
+    // 移动到括号
+    { "keys": ["ctrl+m"], "command": "move_to", "args": {"to": "brackets"} },
+    // 选中同一缩进
+    { "keys": ["ctrl+shift+j"], "command": "expand_selection", "args": {"to": "indentation"} },
+    // 选中到标签(目前不知道tag这么处理)
+    { "keys": ["ctrl+shift+h"], "command": "expand_selection", "args": {"to": "tag"} },
+    //  关闭标签(目前不知道tag怎么玩的)
+    { "keys": ["ctrl+alt+."], "command": "close_tag" },
+
+    // 录制宏
+    { "keys": ["ctrl+q"], "command": "toggle_record_macro" },
+    // 执行宏
+    { "keys": ["ctrl+shift+q"], "command": "run_macro" },
+//----------------------------------------------------------------------//
+
+    // 方法跳转
+    { "keys": ["ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "text": "@"} },
+    // 调转行
+    { "keys": ["ctrl+g"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
+    // 返回上一步
+    { "keys": ["ctrl+["], "command": "jump_back" },
+    // 返回下一步
+    { "keys": ["ctrl+]"], "command": "jump_forward" },
+    // 与上行交换
+    { "keys": ["ctrl+up"], "command": "swap_line_up" },
+    // 与下行交换
+    { "keys": ["ctrl+down"], "command": "swap_line_down" },
+    // 向前删除一个单词    
+    { "keys": ["ctrl+backspace"], "command": "delete_word", "args": { "forward": false, "sub_words": true } },
+    // 向后删除一个单词
+    { "keys": ["ctrl+delete"], "command": "delete_word", "args": { "forward": true, "sub_words": true } },
+    // 合并行
+    { "keys": ["ctrl+j"], "command": "join_lines" },
+    // 复制当前行到下一行(光标所在行)
+    { "keys": ["ctrl+shift+d"], "command": "duplicate_line" },
+    // 字符交换(颠倒)
+    // { "keys": ["ctrl+t"], "command": "transpose" },
+    // 转换大写
+    { "keys": ["ctrl+u"], "command": "upper_case" },
+    // 转换小写
+    { "keys": ["ctrl+l"], "command": "lower_case" },
+    // 编辑类end
+
+
+    // 搜索类start
+    // 搜索
+    { "keys": ["ctrl+f"], "command": "show_panel", "args": {"panel": "find", "reverse": false} },
+    // 搜索替换
+    { "keys": ["ctrl+alt+f"], "command": "show_panel", "args": {"panel": "replace", "reverse": false} },
+    //  文件中查找
+    { "keys": ["ctrl+shift+f"], "command": "show_panel", "args": {"panel": "find_in_files"} },
+    // 搜搜类end
+]
